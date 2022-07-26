@@ -1,0 +1,4 @@
+﻿  Timber.cpp
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(111,30): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(115,17): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+  Timber.vcxproj -> C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\x64\Debug\Timber.exe
