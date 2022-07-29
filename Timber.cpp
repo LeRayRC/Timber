@@ -4,6 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 using namespace sf;
 
@@ -155,6 +156,26 @@ int main()
 	int seed_counter = 0;
 	bool acceptInput = true;
 
+	/*SOUNDS*/
+	//Prepare the sounds
+	SoundBuffer chopBuffer;
+	chopBuffer.loadFromFile("sound/chop.wav");
+	Sound chop;
+	chop.setBuffer(chopBuffer);
+
+	// The player has met his end under a branch
+	SoundBuffer deathBuffer;
+	deathBuffer.loadFromFile("sound/death.wav");
+	Sound death;
+	death.setBuffer(deathBuffer);
+	// Out of time
+	SoundBuffer ootBuffer;
+	ootBuffer.loadFromFile("sound/out_of_time.wav");
+	Sound outOfTime;
+	outOfTime.setBuffer(ootBuffer);
+
+	/*SOUNDS*/
+
 	/*PLAYER*/
 	// Prepare the player
 	Texture texturePlayer;
@@ -237,7 +258,7 @@ int main()
 			window.close();
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Return)) {
+		if (Keyboard::isKeyPressed(Keyboard::Return) && paused) {
 			paused = false;
 
 			resetBranches();
@@ -282,6 +303,8 @@ int main()
 				logSpeedX = -5000;
 				logActive = true;
 				acceptInput = false;
+				//Play a chop sound
+				chop.play();
 			}
 			if (Keyboard::isKeyPressed(Keyboard::Left)) {
 				playerSide = side::LEFT;
@@ -299,6 +322,8 @@ int main()
 				logSpeedX = 5000;
 				logActive = true;
 				acceptInput = false;
+				//Play a chop sound
+				chop.play();
 			}
 
 		}
@@ -341,6 +366,7 @@ int main()
 					textRect.top +
 					textRect.height / 2.0f);
 				messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
+				outOfTime.play();
 			}
 
 			// Setup the bee
@@ -472,6 +498,8 @@ int main()
 					textRect.top + textRect.height / 2.0f);
 				messageText.setPosition(1920 / 2.0f,
 					1080 / 2.0f);
+				//Play death sound
+				death.play();
 			}
 			
 
