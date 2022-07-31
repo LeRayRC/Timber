@@ -1,0 +1,15 @@
+﻿  Timber.cpp
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(81,39): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(294,34): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(313,34): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(375,31): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(379,18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(401,37): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(405,19): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(438,18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+  Generando código
+  1 of 131 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Timber.vcxproj -> C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\x64\Release\Timber.exe

@@ -69,7 +69,7 @@ int main()
 	// Load 1 new texture
 	textureCloud.loadFromFile("graphics/cloud.png");
 
-	const int NUM_CLOUDS = 3;
+	const int NUM_CLOUDS = 4;
 
 	// Arrays for clouds parameters
 	Sprite spriteClouds[NUM_CLOUDS];
@@ -340,7 +340,7 @@ int main()
 			Time dt = clock.restart();
 
 			waitingTime += dt.asSeconds();
-			std::cout << waitingTime << "\n";
+			//std::cout << waitingTime << "\n";
 			if (waitingTime > fpsUpdateInterval) {
 				waitingTime = 0.0f;
 				updateFPStext(dt.asSeconds(), fpsText);
@@ -356,9 +356,8 @@ int main()
 
 				// Pause the game
 				paused = true;
-				score = 0;
 				// Change the message shown to the player
-				messageText.setString("Out of time!!");
+				messageText.setString("\t\tOut of time!! \nPress Enter to Restart");
 				//Reposition the text based on its new size
 				FloatRect textRect = messageText.getLocalBounds();
 				messageText.setOrigin(textRect.left +

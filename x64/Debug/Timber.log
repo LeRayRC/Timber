@@ -1,10 +1,1 @@
-﻿  Timber.cpp
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(81,39): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(294,34): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(313,34): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(376,31): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(380,18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(402,37): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(406,19): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\Timber.cpp(439,18): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  Timber.vcxproj -> C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\x64\Debug\Timber.exe
+﻿  Timber.vcxproj -> C:\Users\charl\OneDrive\Documentos\Programacion\c++\Timber\x64\Debug\Timber.exe
