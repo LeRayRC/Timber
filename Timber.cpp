@@ -270,11 +270,11 @@ int main()
 			timeRemaining = 6;
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Space) && acceptInput) {
-			updateBranches(seed_counter % 100);
-			seed_counter++;
-			acceptInput = false;
-		}
+		//if (Keyboard::isKeyPressed(Keyboard::Space) && acceptInput) {
+		//	updateBranches(seed_counter % 100);
+		//	seed_counter++;
+		//	acceptInput = false;
+		//}
 
 		if (Keyboard::isKeyPressed(Keyboard::F1) && acceptInput) {
 			if (fpsText.getPosition().x > 1920) {
@@ -286,7 +286,7 @@ int main()
 			acceptInput = false;
 		}
 
-		if (acceptInput) {
+		if (acceptInput && !paused) {
 			if (Keyboard::isKeyPressed(Keyboard::Right)) {
 				playerSide = side::RIGHT;
 				score++;
